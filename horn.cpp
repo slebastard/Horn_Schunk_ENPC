@@ -124,7 +124,7 @@ Image<FVector<float, 2>, 2 > flow_Horn_Schunk(Image<FVector<float, 3> >& I1, Ima
 }
 
 // Generation d'une map de vitesse initiale pour les iterations de Horn et Schunk
-Image<FVector<float, 2>, 2 > init_map(int width, int height, float v_min = 0, float v_max = 1)
+Image<FVector<float, 2>, 2 > init_map(int width, int height, float v_min, float v_max)
 {
 	Image<FVector<float, 2>, 2 > V(width, height);
 	for (int i = 0; i < width; i++)
